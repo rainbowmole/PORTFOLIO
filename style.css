@@ -1,0 +1,91 @@
+#header {
+    background-color: #788b97;
+    font-size: 28px;
+    font-style: Ms Comic Sans;
+    padding: 10px;
+    text-align: left;
+}
+
+#header {
+    background-color: #788b97;
+    font-size: 28px;
+    font-style: Ms Comic Sans;
+    padding: 10px;
+    text-align: left;
+}
+
+#header h1{
+	color: #7bb0d3;
+    margin-left: 3%;
+}
+
+body {
+    background-color: #364450;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Comic Sans Ms;
+}
+
+#profile{
+    float: left;
+    padding: 20px;
+    padding-right: 100px; 
+    margin-left: 3%;
+    border-radius: 8px;
+    background-color: #c1dbec;
+    box-shadow: 6px solid #444444;
+    display: inline-flex;
+}
+
+#profile_pic{
+    display: block;
+    margin: 0 auto;
+    width: 400px; 
+    border-radius: 5px; 
+}
+
+#description{
+    float: right;
+    padding: 20px;
+}
+
+/*Navigation*/
+#nav {
+    background-color: #364450;
+    margin-right: 70%;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px;
+}
+
+#nav_icons {
+    display: block;
+    margin: 0 auto;
+    width: 40px; 
+    border-radius: 5px; 
+}
+
+li {
+    list-style: none;
+    display: inline-block; 
+    margin: 0 10px; 
+    line-height: 0;
+    background-color: #ffff;
+    border-radius: 20px;
+}
+
+li a {
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    color: #333; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
