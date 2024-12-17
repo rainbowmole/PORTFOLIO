@@ -1,91 +1,180 @@
-#header {
-    background-color: #788b97;
-    font-size: 28px;
-    font-style: Ms Comic Sans;
-    padding: 10px;
-    text-align: left;
-}
-
-#header {
-    background-color: #788b97;
-    font-size: 28px;
-    font-style: Ms Comic Sans;
-    padding: 10px;
-    text-align: left;
-}
-
-#header h1{
-	color: #7bb0d3;
-    margin-left: 3%;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #364450;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Comic Sans Ms;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
-#profile{
-    float: left;
-    padding: 20px;
-    padding-right: 100px; 
-    margin-left: 3%;
-    border-radius: 8px;
-    background-color: #c1dbec;
-    box-shadow: 6px solid #444444;
-    display: inline-flex;
+#header {
+    background-color: #788b97;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
 }
 
-#profile_pic{
-    display: block;
-    margin: 0 auto;
-    width: 400px; 
-    border-radius: 5px; 
-}
-
-#description{
-    float: right;
-    padding: 20px;
-}
-
-/*Navigation*/
 #nav {
     background-color: #364450;
-    margin-right: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
     padding: 0;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 30px;
+    margin: 0;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav li a:hover {
+    background-color: #7bb0d3;
+    color: #ffffff;
 }
 
 #nav_icons {
-    display: block;
-    margin: 0 auto;
-    width: 40px; 
-    border-radius: 5px; 
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
-li {
-    list-style: none;
-    display: inline-block; 
-    margin: 0 10px; 
-    line-height: 0;
-    background-color: #ffff;
-    border-radius: 20px;
-}
-
-li a {
-    text-decoration: none; 
+#profile {
     display: flex;
-    align-items: center;
-    padding: 10px; 
-    color: #333; 
-    border-radius: 5px; 
-    transition: background-color 0.3s ease;
+    justify-content: left;
+    padding: 2rem;
 }
 
+#profile_frame {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+#profile_header {
+    background-color: #788b97;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+
+#profile_content {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.profile_pic_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+#profile_pic {
+    width: 100%;
+    max-width: 250px;
+    border: 3px solid #84a5bb;
+    border-radius: 10px;
+}
+
+
+#description {
+    flex: 2;
+    min-width: 250px;
+    padding: 1rem;
+}
+
+#description h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#description p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+#greetings {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #header {
+        font-size: 1.5rem;
+    }
+
+    #profile_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #description {
+        text-align: center;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #nav li a {
+        justify-content: center;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #nav_icons {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        font-size: 1.2rem;
+    }
+
+    #greetings {
+        font-size: 1rem;
+    }
+}
