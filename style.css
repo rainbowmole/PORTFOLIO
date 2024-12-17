@@ -64,6 +64,12 @@ body {
     border-radius: 5px;
 }
 
+#introduction {
+    display: flex;
+    justify-content: left;
+    padding: 2rem;
+}
+
 #profile {
     display: flex;
     justify-content: left;
@@ -167,14 +173,16 @@ body {
         width: 30px;
         height: 30px;
     }
-}
 
-@media (max-width: 480px) {
-    #header {
-        font-size: 1.2rem;
+    /* Fixing Introduction and Profile Sections */
+    #introduction,
+    #profile {
+        flex-direction: column;
+        padding: 1rem;
     }
 
-    #greetings {
-        font-size: 1rem;
+    .profile_pic_container {
+        margin-bottom: 1rem;
     }
 }
+
