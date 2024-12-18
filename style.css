@@ -87,6 +87,15 @@ body {
     border-radius: 5px;
 }
 
+#spline_bg {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+    pointer-events: none;
+}
 #introduction, #profile {
     display: flex;
     justify-content: center;
@@ -136,7 +145,7 @@ body {
 #greetings {
     width: 100%;
     max-width: 800px;
-    background-color: #364450;
+    background-color: rgba(0, 0, 0, 0);
     text-align: justify;
     margin: 2rem auto;
     font-size: 1.2rem;
