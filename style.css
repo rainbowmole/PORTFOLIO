@@ -95,12 +95,13 @@ body {
     height: 100%; 
     z-index: -1;
     pointer-events: none;
+    margin-top: 20px;
 }
 #introduction, #profile {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #profile_frame {
@@ -361,6 +362,10 @@ body {
     #profile {
         flex-direction: column;
         padding: 1rem;
+    }
+
+    #spline_bg {
+        display: none;
     }
 
     .profile_pic_container {
